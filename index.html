@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <title>JAD Automation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <!--Ruta de las extensiones de las imágenes-->
+  <style>
+
+    
+    .bg-hero    { background-image: url('img/hero.jpg'); }
+    .bg-hoses   { background-image: url('img/hoses.jpg'); }
+    .bg-tools   { background-image: url('img/tools.jpg'); }
+    .bg-design  { background-image: url('img/design.jpg'); }
+    .bg-logos { background-image: url('img/logos-bg.jpg'); }
+    .bg-catalogo { background-image: url('img/catalogo.jpg'); }
+    .bg-contact { background-image: url('img/plant.jpg'); }
+
+    .bg-section {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900 text-white font-sans antialiased">
+
+
+  <!-- 🔵 Barra superior fija -->
+  <header class="fixed inset-x-0 top-0 z-20 bg-slate-950/60 backdrop-blur-md border-b border-slate-800/70">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3 md:py-4">
+
+    <!-- Logo y Nombre -->
+    <div class="flex items-center gap-3">
+      <img src="img/logo.png"
+           class="w-28 md:w-32 h-auto drop-shadow-[0_0_18px_rgba(255,255,255,0.8)]"
+           alt="JAD Automation Logo">
+
+      <div class="leading-tight">
+        <p class="font-semibold text-base md:text-lg">JAD Automation</p>
+        <p class="text-xs text-slate-300">Hydraulic · Pneumatic · Automation</p>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="hidden md:flex gap-6 text-sm font-medium">
+      <a href="#inicio"      class="hover:text-sky-400 transition-colors duration-200">Inicio</a>
+      <a href="#empresa"     class="hover:text-sky-400 transition-colors duration-200">Empresa</a>
+      <a href="#productos"   class="hover:text-sky-400 transition-colors duration-200">Productos</a>
+      <a href="#servicios"   class="hover:text-sky-400 transition-colors duration-200">Automatización</a>
+      <a href="#catalogo"    class="hover:text-sky-400 transition-colors duration-200">Catálogo</a>
+      <a href="#contacto"    class="hover:text-sky-400 transition-colors duration-200">Contacto</a>
+    </nav>
+
+  </div>
+</header>
+
+
+  <!-- Contenedor principal con scroll suave + secciones a pantalla completa -->
+  <main class="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+
+    <!-- 1. Hero -->
+    <section id="inicio"
+      class="snap-start h-screen bg-section bg-hero relative flex items-center">
+      <div class="absolute inset-0 bg-slate-950/70"></div>
+
+      <div class="relative max-w-5xl mx-auto px-6">
+        <p class="uppercase tracking-[0.3em] text-xs text-sky-300 mb-3">
+          Quality approach in the industry
+        </p>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">
+          Soluciones integrales en
+          <span class="text-sky-400">automatización industrial</span>
+        </h1>
+        <p class="max-w-xl text-sm md:text-base text-slate-200 mb-6">
+          Proveemos mangueras, acoplamientos, sellos, herramientas, sistema de lubricación y enfriameiento, transmisión 
+          mecánica y soluciones de automatización para empresas productivas que buscan mejorar su eficiencia operativa.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#productos"
+            class="px-5 py-2.5 rounded-full bg-sky-500 hover:bg-sky-400 text-sm font-medium
+            shadow-lg shadow-sky-500/20 hover:shadow-sky-400/30
+            transition-transform transition-shadow duration-300 hover:-translate-y-0.5">
+            Ver líneas de producto
+          </a>
+          <a href="#contacto"
+            class="px-5 py-2.5 rounded-full bg-sky-500 hover:bg-sky-400 text-sm font-medium
+            shadow-lg shadow-sky-500/20 hover:shadow-sky-400/30
+            transition-transform transition-shadow duration-300 hover:-translate-y-0.5">
+            Cotizar ahora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Empresa -->
+    <section id="empresa"
+      class="snap-start h-screen bg-section bg-hoses relative flex items-center">
+      <div class="absolute inset-0 bg-slate-950/75"></div>
+
+      <div class="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-semibold mb-4">¿Quiénes somos?</h2>
+          <p class="text-sm md:text-base text-slate-200 mb-4">
+            Somos una empresa especializada en suministros industriales y automatización, con experiencia en soluciones para sectores
+            automotriz, munufacturero, metalmecánico y de procesos.
+          </p>
+            <p class="text-sm md:text-base text-slate-200 mb-4">
+            Brindamos productos confiables, asesoría técnica y soporte rápido, 
+            enfocados en mantener tus operaciones funcionando sin interrupciones.
+            </p>
+        </div>
+
+        <div class="bg-slate-900/70 rounded-3xl p-6 border border-slate-700">
+          <h3 class="text-lg font-semibold mb-3">Líneas principales</h3>
+          <ul class="space-y-2 text-sm text-slate-200">
+            <li>• Acoples y mangueras hidráulicas y neumáticas</li>
+            <li>• Sellos, juntas, empaques y elementos de estanqueidad</li>
+            <li>• Sistemas de lubricación y productos químicos</li>
+            <li>• Herramientas manuales, eléctricas y neumáticas</li>
+            <li>• Transmisión mecánica y componentes industriales</li>
+            <li>• Diseño mecánico 2D/3D y automatización de procesos</li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Productos -->
+    <section id="productos"
+      class="snap-start h-screen bg-section bg-tools relative flex items-center">
+      <div class="absolute inset-0 bg-slate-950/78"></div>
+
+      <div class="relative max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold mb-6">Productos destacados</h2>
+        
+        <div class="grid md:grid-cols-4 gap-5 text-sm">
+          <div class="bg-slate-900/70 border border-slate-800 rounded-3xl p-4
+            shadow-lg shadow-black/30 hover:bg-slate-900/90 hover:border-sky-500/60 
+            hover:shadow-xl hover:shadow-sky-500/20 transition-all duration-300">
+
+            <img src="img/mangueras.jpg"
+            class="w-full h-28 object-cover rounded-2xl mb-3 opacity-90 hover:opacity-100 transition duration-300">
+
+            <h3 class="font-semibold mb-2 text-sky-300">Mangueras y acoples</h3>
+            <p class="text-slate-200">
+            Conectores y mangueras para alta, media y baja presión. Líneas para aire,
+            agua, aceite, químicos, gas y aplicación industrial general.
+            </p>
+
+
+
+
+          </div>
+          <div class="bg-slate-900/70 border border-slate-800 rounded-3xl p-4
+            shadow-lg shadow-black/30
+            hover:bg-slate-900/90 hover:border-sky-500/60
+            hover:shadow-xl hover:shadow-sky-500/20
+            transition-all duration-300">
+
+            <img src="img/neumatica.jpg" 
+            class="w-full h-28 object-cover rounded-2xl mb-3 opacity-90 hover:opacity-100 transition duration-300">
+
+
+            <h3 class="font-semibold mb-2 text-sky-300">Neumática e instrumentación</h3>
+                <p class="text-slate-200">
+                Válvulas, cilindros, reguladores, filtros, lubricadores, manómetros y 
+                accesorios para sistemas de automatización y control de aire.
+                </p>
+
+          </div>
+          <div class="bg-slate-900/70 border border-slate-800 rounded-3xl p-4
+            shadow-lg shadow-black/30
+            hover:bg-slate-900/90 hover:border-sky-500/60
+            hover:shadow-xl hover:shadow-sky-500/20
+            transition-all duration-300">
+
+            <img src="img/sellos.jpg" 
+            class="w-full h-28 object-cover rounded-2xl mb-3 opacity-90 hover:opacity-100 transition duration-300">
+
+
+            <h3 class="font-semibold mb-2 text-sky-300">Sellos y lubricación</h3>
+                <p class="text-slate-200">
+                O-rings, retenes, empaques especiales, grasas industriales y sistemas 
+                automatizados de lubricación para maquinaria.
+                </p>
+
+          </div>
+          <div class="bg-slate-900/70 border border-slate-800 rounded-3xl p-4
+            shadow-lg shadow-black/30
+            hover:bg-slate-900/90 hover:border-sky-500/60
+            hover:shadow-xl hover:shadow-sky-500/20
+            transition-all duration-300">
+
+            <img src="img/herramientas.jpg" 
+            class="w-full h-28 object-cover rounded-2xl mb-3 opacity-90 hover:opacity-100 transition duration-300">
+
+
+            <h3 class="font-semibold mb-2 text-sky-300">Herramientas y transmisión</h3>
+                <p class="text-slate-200">
+                Herramienta manual, neumática y eléctrica. Cadenas, rodamientos, 
+                poleas, tuercas, pernos y otros elementos de transmisión.
+                </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Servicio de automatización -->
+    <section id="servicios"
+      class="snap-start h-screen bg-section bg-design relative flex items-center">
+      <div class="absolute inset-0 bg-slate-950/80"></div>
+
+      <div class="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-semibold mb-4">Automatización & diseño</h2>
+          <p class="text-sm md:text-base text-slate-200 mb-3">
+            Ofrecemos soluciones integrales de automatización industrial desde el diseño hasta la integración de equipos de control.
+          </p>
+
+          <p class="text-sm md:text-base text-slate-200 mb-3">
+            Implementamos PLC, HMI, variadores, sensores, sistemas de visión, paneles eléctricos y mejoras enfocadas en productividad y 
+            seguridad.
+          </p>
+
+        </div>
+        <div class="bg-slate-900/70 rounded-3xl p-6 border border-slate-700">
+          <h3 class="font-semibold mb-3 text-sky-300">Beneficios</h3>
+          <ul class="space-y-2 text-sm text-slate-200">
+            <li>• Mejora de productividad y reducción de tiempos de paro</li>
+            <li>• Integración de nuevos equipos con sistemas existentes</li>
+            <li>• Diseño 2D/3D de maquinaria y adecuaciones mecánicas</li>
+            <li>• Programación, instalación y puesta en marcha</li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--Sección de empresas con las que trabajan-->
+
+    <section id="partners" 
+    class="snap-start h-screen bg-section bg-logos relative flex items-center">
+
+       <div class="absolute inset-0 bg-gradient-to-b from-white/45 via-white/35 to-white/25 backdrop-blur-[2px]"></div>
+
+
+
+
+        <div class="max-w-6xl mx-auto px-6 text-center">
+
+        <h2 class="text-3xl md:text-4xl font-semibold mb-6 text-white drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]">
+
+        Empresas que confían en nosotros
+        </h2>
+
+        <p class="text-slate-300 mb-10 text-white drop-shadow-[0_0_8px_rgba(0,0,0,0.7)]">
+        Trabajamos junto a empresas líderes que respaldan la calidad de nuestros productos.
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 place-items-center">
+        
+        <img src="img/logos/swagelok.png" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/Aki.png" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="img//logos/dixon.png" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/dk.png" 
+        class="h-20 md:h-24 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/durr.png" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/forvia.png" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/gates.png" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/goodyear.jpg" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/hallite.png" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/hbpq.png" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/ypc.png"
+        class="h-20 md:h-24 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/ideal.png"
+        class="h-20 md:h-24 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/jason.png"
+        class="h-20 md:h-24 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/mitsubishi electric.png"
+        class="h-20 md:h-24 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/nok.png" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/pxi.png" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/ryco.png" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/skf.png" class="h-16 opacity-80 hover:opacity-100 transition">
+        <img src="img/logos/smc.png" class="h-16 opacity-80 hover:opacity-100 transition">
+        
+        </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- 5. BOTÓN DESCARGAR CATÁLOGO -->
+    <section id="catalogo"
+      class="snap-start h-screen bg-section bg-catalogo relative flex items-center">
+      
+        <div class="absolute inset-0 bg-slate-950/80"></div>
+
+        <div class="relative max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-semibold mb-4">
+             Catálogo JAD Automation
+            </h2>
+            <p class="text-sm md:text-base text-slate-200 mb-6">
+            Consulta nuestros productos, especificaciones técnicas y soluciones 
+            diseñadas para optimizar tus operaciones industriales.
+            </p>
+
+            <a href="docs/catalogo-jad-automation.pdf" download
+        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-sky-500 hover:bg-sky-400 text-sm md:text-base font-medium">
+        📄 Descargar catálogo
+    </a>
+  </div>
+</section>
+
+
+    <!-- 6. CONTACTO -->
+    <section id="contacto"
+      class="snap-start h-screen bg-section bg-contact relative flex items-center">
+      <div class="absolute inset-0 bg-slate-950/85"></div>
+
+      <div class="relative max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold mb-6">Contacto</h2>
+        <p class="text-sm text-slate-200 mb-2">
+          Estamos listos para asesorarte y brindarte soluciones industriales 
+          confiables. Contáctanos para cotizaciones, soporte técnico o 
+          información de productos.
+        </p>
+
+        <p class="text-sm md:text-base text-stalte-200">
+            📧 <a href="mailto:ventas.jad.automation@outlook.com"
+            class="text-sky-400 hover:underline">
+            ventas.jad.automation@outlook.com
+            </a>
+  
+            <br>
+
+            📞 Teléfono de atención 444 444 4444
+          
+
+        
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
